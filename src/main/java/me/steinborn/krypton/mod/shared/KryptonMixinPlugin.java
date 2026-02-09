@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Set;
 
 public class KryptonMixinPlugin implements IMixinConfigPlugin {
+    private static final boolean E4MC_LOADED = FabricLoader.getInstance().isModLoaded("e4mc");
+
     @Override
     public void onLoad(String mixinPackage) {
 
@@ -20,6 +22,11 @@ public class KryptonMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+        // Disable ServerLoginNetworkHandlerMixin if e4mc is loaded, as it conflicts with e4mc's
+        // encryption handling for Dialtone (P2P) connections
+        if (E4MC_LOADED && mixinClassName.equals("me.steinborn.krypton.mixin.shared.network.pipeline.encryption.ServerLoginNetworkHandlerMixin")) {
+            return false;
+        }
         return true;
     }
 
