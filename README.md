@@ -10,8 +10,6 @@ Krypton derives itself from Ancient Greek _kryptos_, which means "the hidden one
 it evident most of the benefit from Krypton is "hidden" but is noticeable by a server administrator.
 
 [The wiki contains important information &ndash; read it](https://github.com/astei/krypton/wiki).
-[Join my Discord](https://discord.gg/RUGArxEQ8J) to discuss the mod or get support if the wiki didn't
-answer your question.
 
 ## Compiling / Releases
 
@@ -22,6 +20,3 @@ answer your question.
 
 Releases I deem reasonably stable can be found on [GitHub](https://github.com/astei/krypton/releases),
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/krypton), and on [Modrinth](https://modrinth.com/mod/krypton).
-Development builds may be downloaded from my [Jenkins server](https://ci.velocitypowered.com/job/krypton/).
-
-You can also compile the mod from source in the usual fashion.
