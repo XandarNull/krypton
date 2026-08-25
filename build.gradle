@@ -28,6 +28,8 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation include("com.velocitypowered:velocity-native:3.4.0-SNAPSHOT")
+    implementation include("io.github.llamalad7:mixinextras-fabric:0.4.1")
+    annotationProcessor "io.github.llamalad7:mixinextras-fabric:0.4.1"
 }
 
 test {
